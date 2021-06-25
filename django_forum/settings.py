@@ -14,7 +14,7 @@ from pathlib import Path
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -141,3 +141,4 @@ cloudinary.config(
   api_key = "435398165782224", 
   api_secret = "W3pcj6f9fCt9RnTvuGI8sgEWu4k" 
 )
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
